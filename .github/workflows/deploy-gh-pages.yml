@@ -18,12 +18,15 @@ jobs:
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
+      - name: debug directory
+        run: |
+          ls
       - name: Install dependencies
         run: |
           npm install
       - name: Build application
         run: |
-          npm run build --base /
+          npm run build --base .
           cp dist/index.html dist/404.html
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2.3.0
