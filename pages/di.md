@@ -92,7 +92,7 @@ Porém em sistemas complexos, instanciar todas as classes e suas depêndencias m
 
 <div class="img-section">
 <div class="left">
-<img src="imgs/angular-di.webp" class="di-img" />
+<img src="/imgs/angular-di.webp" class="di-img" />
 </div>
 <div class="right">
 

@@ -6,7 +6,7 @@
 O Angular utiliza a biblioteca RxJS para implementar reatividade.
 </div>
 
-<img src="imgs/rxjs-logo.jpeg" class="rxjs-logo" />
+<img src="/imgs/rxjs-logo.jpeg" class="rxjs-logo" />
 </div>
 
 <div class="below side-by-side">
@@ -138,7 +138,7 @@ clicks: 4
 
 <div class="left-side">
 
-<img src="imgs/rxjs-observable.png" class="cmp-img" />
+<img src="/imgs/rxjs-observable.png" class="cmp-img" />
 
 </div>
 
