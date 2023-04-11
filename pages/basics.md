@@ -1,5 +1,4 @@
 ---
-transition: slide-up
 layout: two-cols
 ---
 # Componentes
@@ -206,6 +205,62 @@ configuração ou comunicação com outros componentes.
   flex-direction: column;
   justify-content: center;
 }
+</style>
+
+---
+layout: two-cols
+---
+
+# Pipes
+
+<div class="left-side">
+Utilizada para transformar valores para exibição em formato amigável ao usuário
+
+```ts
+@Pipe({
+  name: 'uppercase',
+  standalone: true,
+})
+export class UpperCasePipe implements PipeTransform {
+  transform(value: string|null|undefined): string|null {
+    if (value == null) return null;
+    if (typeof value !== 'string') {
+      throw invalidPipeArgumentError(value);
+    }
+    return value.toUpperCase();
+  }
+}
+```
+</div>
+
+::right::
+
+<div class="left-side">
+<div>
+Exemplo:
+
+```html
+<div>
+  <p> {{ name | uppercase }}</p>
+</div>
+```
+</div>
+
+As pipes podem receber parâmetros que são passados como argumentos para a função transform.
+</div>
+
+<style>
+  .right-side {
+    padding: 10px;
+  }
+
+  .left-side {
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 </style>
 
 ---

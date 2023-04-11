@@ -32,8 +32,6 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
----
 
 <h1> 
 Fundamentos do <span class="angular-name">Angular</span>
@@ -105,16 +103,26 @@ src: ./pages/di.md
 src: ./pages/rxjs.md
 ---
 
+---
+layout: center
+---
+
+# Ferramentas do Angular
+
 
 ---
 src: ./pages/forms.md
 ---
 
 ---
-layout: center
-class: text-center
+src: ./pages/httpclient.md
 ---
 
-# Learn More
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+---
+src: ./pages/router.md
+---
+
+---
+src: ./pages/best-practices.md
+---
