@@ -1,6 +1,9 @@
 name: Deploy pages
 
-on:  push
+on:  
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -14,7 +17,7 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         run: |
           npm install
